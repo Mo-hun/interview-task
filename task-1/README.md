@@ -11,8 +11,84 @@
 ### 조건
 - 컨트롤러 네이밍: BookController
 
-```
-# example
+### 명세
+GET /books
 
-GET /books  Get list of books
+- 요청
+```
+{
+
+}
+```
+
+- 응답
+```
+[
+    {
+        "id" : `ID`,
+        "name" : `NAME`,
+        "category" : `CATEGORY`,
+        "price": `PRICE`
+    },
+    {
+        "id" : `ID`,
+        "name" : `NAME`,
+        "category" : `CATEGORY`,
+        "price": `PRICE`
+    }...
+]
+```
+
+POST /books
+
+- 요청
+```
+{
+    "name" : `NAME`,
+    "category" : `CATEGORY`,
+    "price": `PRICE`
+}
+```
+
+- 응답
+```
+{
+    "id" : `ID`,
+    "name" : `NAME`
+}
+```
+
+PUT /books
+
+- 요청
+```
+{
+    "id" : `ID`,
+    "name" : `NAME`,
+    "category" : `CATEGORY`,
+    "price": `PRICE`
+}
+```
+
+- 응답
+```
+{
+    "id" : `ID`,
+    "name" : `NAME`
+}
+```
+
+DELETE /books
+
+- 요청
+```
+{
+    "id" : `ID`
+}
+```
+
+- 응답
+```
+{
+}
 ```
